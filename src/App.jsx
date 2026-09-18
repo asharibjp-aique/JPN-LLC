@@ -21,6 +21,10 @@ import fleet from './assets/luxury-fleet.png'
 import owner from './assets/naeem-muhammad.png'
 import whatsappQr from './assets/whatsapp-qr.png'
 import lineQr from './assets/line-qr.png'
+import bmwImage from './assets/bmw-7-series.png'
+import lexusImage from './assets/lexus-lx.png'
+import pradoImage from './assets/land-cruiser-prado.png'
+import porscheImage from './assets/porsche-911.png'
 
 const content = {
   en: {
@@ -49,7 +53,7 @@ const content = {
       ['BMW 7 Series', 'Executive luxury', 'Precision, comfort, presence.'],
       ['Lexus LX', 'Premium SUV', 'Japanese refinement without compromise.'],
       ['Land Cruiser Prado', 'Luxury 4×4', 'Legendary capability, everyday comfort.'],
-      ['New-model selection', 'Sourced to order', 'Tell us what you want. We will find it.'],
+      ['Porsche 911 Carrera', 'Modern sports icon', 'Timeless form, contemporary performance.'],
     ],
     aboutKicker: 'PERSONAL SERVICE',
     aboutTitle: 'A trusted point of contact in Japan.',
@@ -108,7 +112,7 @@ const content = {
       ['BMW 7シリーズ', '高級セダン', '精密さ、快適さ、圧倒的な存在感。'],
       ['レクサス LX', 'プレミアムSUV', '妥協のない日本の洗練。'],
       ['ランドクルーザー プラド', 'ラグジュアリー4WD', '信頼の走破性と日常の快適性。'],
-      ['新型車セレクション', 'オーダー仕入れ', 'ご希望をお聞かせください。最適な一台を探します。'],
+      ['ポルシェ 911 カレラ', 'モダンスポーツ', '時代を超えるフォルムと現代のパフォーマンス。'],
     ],
     aboutKicker: 'パーソナルサービス',
     aboutTitle: '日本で信頼できる窓口を。',
@@ -144,10 +148,10 @@ const content = {
 }
 
 const vehicles = [
-  { position: '18% center', className: 'prado' },
-  { position: '43% center', className: 'lexus' },
-  { position: '68% center', className: 'bmw' },
-  { position: '89% center', className: 'sport' },
+  { image: bmwImage, className: 'bmw' },
+  { image: lexusImage, className: 'lexus' },
+  { image: pradoImage, className: 'prado' },
+  { image: porscheImage, className: 'sport' },
 ]
 
 function App() {
@@ -262,9 +266,8 @@ function App() {
               <article className="vehicle-card" key={name} data-reveal style={{ '--delay': `${index * 80}ms` }}>
                 <div className={`vehicle-image ${vehicles[index].className}`}>
                   <img
-                    src={fleet}
+                    src={vehicles[index].image}
                     alt={`${name} — ${type}`}
-                    style={{ objectPosition: vehicles[index].position }}
                   />
                   <span className="vehicle-number">0{index + 1}</span>
                   <span className="vehicle-arrow"><ArrowUpRight size={18} /></span>
