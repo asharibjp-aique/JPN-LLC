@@ -4,8 +4,7 @@ A premium, bilingual single-page portfolio for JPN LLC's Japanese vehicle sourci
 
 ## Highlights
 
-- English and Japanese site modes
-- English ↔ Japanese message translator
+- One-click English ↔ Japanese full-site language toggle
 - Responsive luxury-vehicle showcase
 - Owner profile and direct contact actions
 - WhatsApp and LINE QR codes

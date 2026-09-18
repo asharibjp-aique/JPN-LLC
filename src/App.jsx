@@ -1,14 +1,10 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
   ArrowRight,
-  ArrowRightLeft,
   ArrowUpRight,
   CheckCircle2,
   ChevronRight,
-  Clock3,
-  ExternalLink,
   Globe2,
-  Languages,
   Mail,
   MapPin,
   Menu,
@@ -28,8 +24,8 @@ import lineQr from './assets/line-qr.png'
 
 const content = {
   en: {
-    nav: ['Collection', 'About', 'Services', 'Translate', 'Contact'],
-    navIds: ['collection', 'about', 'services', 'translate', 'contact'],
+    nav: ['Collection', 'About', 'Services', 'Contact'],
+    navIds: ['collection', 'about', 'services', 'contact'],
     availability: 'Sourcing from Japan · Shipping worldwide',
     eyebrow: 'JAPANESE AUTOMOTIVE EXPORT',
     heroLine1: 'Japan-sourced.',
@@ -71,20 +67,6 @@ const content = {
       ['02', 'Verify', 'We review the vehicle details and keep the process clear before you decide.'],
       ['03', 'Export', 'We coordinate the next steps and support your shipment from Japan.'],
     ],
-    translatorKicker: 'LANGUAGE BRIDGE',
-    translatorTitle: 'English ↔ Japanese translator',
-    translatorBody:
-      'Translate a message before sending your enquiry. This tool runs entirely from the browser—no JPN LLC account required.',
-    fromEnglish: 'English to Japanese',
-    fromJapanese: 'Japanese to English',
-    inputPlaceholderEn: 'Type your English message…',
-    inputPlaceholderJa: '日本語のメッセージを入力してください…',
-    outputPlaceholder: 'Your translation will appear here.',
-    translateButton: 'Translate message',
-    translating: 'Translating…',
-    openGoogle: 'Open in Google Translate',
-    translatorNote: 'Machine translation may not capture every nuance. We are happy to clarify your enquiry personally.',
-    translatorError: 'The instant translator is unavailable right now. Use the Google Translate option below.',
     contactKicker: 'START A CONVERSATION',
     contactTitle: 'Your next car may already be in Japan.',
     contactBody: 'Call, email, or scan a QR code. Naeem will respond personally.',
@@ -101,8 +83,8 @@ const content = {
     managed: 'Designed & managed by AIQUE',
   },
   ja: {
-    nav: ['在庫車', '私たちについて', 'サービス', '翻訳', 'お問い合わせ'],
-    navIds: ['collection', 'about', 'services', 'translate', 'contact'],
+    nav: ['在庫車', '私たちについて', 'サービス', 'お問い合わせ'],
+    navIds: ['collection', 'about', 'services', 'contact'],
     availability: '日本から厳選 · 世界各国へ輸出',
     eyebrow: '日本車輸出サービス',
     heroLine1: '日本から厳選。',
@@ -144,20 +126,6 @@ const content = {
       ['02', '確認', 'ご決定前に車両情報を確認し、分かりやすくご案内します。'],
       ['03', '輸出', '必要な手続きを調整し、日本からの輸送をサポートします。'],
     ],
-    translatorKicker: '言葉をつなぐ',
-    translatorTitle: '英語 ↔ 日本語 翻訳',
-    translatorBody:
-      'お問い合わせを送る前にメッセージを翻訳できます。JPN合同会社のアカウント登録は不要です。',
-    fromEnglish: '英語から日本語',
-    fromJapanese: '日本語から英語',
-    inputPlaceholderEn: '英語のメッセージを入力してください…',
-    inputPlaceholderJa: '日本語のメッセージを入力してください…',
-    outputPlaceholder: '翻訳結果がここに表示されます。',
-    translateButton: 'メッセージを翻訳',
-    translating: '翻訳中…',
-    openGoogle: 'Google翻訳で開く',
-    translatorNote: '機械翻訳では細かなニュアンスが伝わらない場合があります。お気軽に直接お問い合わせください。',
-    translatorError: '現在、即時翻訳を利用できません。下のGoogle翻訳をご利用ください。',
     contactKicker: 'お問い合わせ',
     contactTitle: '次の一台は、日本にあるかもしれません。',
     contactBody: 'お電話、メール、またはQRコードからご連絡ください。ネイムが直接対応します。',
@@ -185,10 +153,6 @@ const vehicles = [
 function App() {
   const [lang, setLang] = useState('en')
   const [menuOpen, setMenuOpen] = useState(false)
-  const [direction, setDirection] = useState('en-ja')
-  const [sourceText, setSourceText] = useState('')
-  const [translatedText, setTranslatedText] = useState('')
-  const [translationState, setTranslationState] = useState('idle')
   const t = content[lang]
 
   useEffect(() => {
@@ -204,42 +168,6 @@ function App() {
     document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el))
     return () => revealObserver.disconnect()
   }, [lang])
-
-  const translatorConfig = useMemo(() => {
-    const source = direction === 'en-ja' ? 'en' : 'ja'
-    const target = direction === 'en-ja' ? 'ja' : 'en'
-    return { source, target }
-  }, [direction])
-
-  const swapDirection = () => {
-    setDirection((current) => (current === 'en-ja' ? 'ja-en' : 'en-ja'))
-    setSourceText(translatedText)
-    setTranslatedText(sourceText)
-    setTranslationState('idle')
-  }
-
-  const translateMessage = async () => {
-    if (!sourceText.trim()) return
-    setTranslationState('loading')
-    try {
-      const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(
-        sourceText.trim().slice(0, 500),
-      )}&langpair=${translatorConfig.source}|${translatorConfig.target}`
-      const response = await fetch(url)
-      if (!response.ok) throw new Error('Translation request failed')
-      const data = await response.json()
-      if (!data?.responseData?.translatedText) throw new Error('Translation unavailable')
-      setTranslatedText(data.responseData.translatedText)
-      setTranslationState('success')
-    } catch {
-      setTranslatedText('')
-      setTranslationState('error')
-    }
-  }
-
-  const googleTranslateUrl = `https://translate.google.com/?sl=${translatorConfig.source}&tl=${translatorConfig.target}&text=${encodeURIComponent(
-    sourceText,
-  )}&op=translate`
 
   return (
     <div className="site-shell">
@@ -264,7 +192,8 @@ function App() {
           <button
             className="language-toggle"
             onClick={() => setLang(lang === 'en' ? 'ja' : 'en')}
-            aria-label="Switch site language"
+            aria-label={lang === 'en' ? 'Switch site to Japanese' : 'Switch site to English'}
+            title={lang === 'en' ? '日本語に切り替える' : 'Switch to English'}
           >
             <Globe2 size={16} />
             <span>{lang === 'en' ? '日本語' : 'EN'}</span>
@@ -399,72 +328,6 @@ function App() {
                 </article>
               )
             })}
-          </div>
-        </section>
-
-        <section className="section translator-section" id="translate">
-          <div className="translator-intro" data-reveal>
-            <div className="translator-orbit">
-              <Languages size={34} />
-              <span>EN</span>
-              <span>日本語</span>
-            </div>
-            <p className="eyebrow light">{t.translatorKicker}</p>
-            <h2>{t.translatorTitle}</h2>
-            <p>{t.translatorBody}</p>
-          </div>
-
-          <div className="translator-card" data-reveal>
-            <div className="direction-tabs">
-              <button
-                className={direction === 'en-ja' ? 'active' : ''}
-                onClick={() => setDirection('en-ja')}
-              >
-                EN <ArrowRight size={14} /> 日本語
-              </button>
-              <button
-                className={direction === 'ja-en' ? 'active' : ''}
-                onClick={() => setDirection('ja-en')}
-              >
-                日本語 <ArrowRight size={14} /> EN
-              </button>
-            </div>
-
-            <div className="translation-fields">
-              <label>
-                <span>{direction === 'en-ja' ? 'English' : '日本語'}</span>
-                <textarea
-                  value={sourceText}
-                  onChange={(event) => setSourceText(event.target.value)}
-                  placeholder={direction === 'en-ja' ? t.inputPlaceholderEn : t.inputPlaceholderJa}
-                  maxLength={500}
-                />
-                <small>{sourceText.length}/500</small>
-              </label>
-
-              <button className="swap-button" onClick={swapDirection} aria-label="Swap translation direction">
-                <ArrowRightLeft size={18} />
-              </button>
-
-              <label>
-                <span>{direction === 'en-ja' ? '日本語' : 'English'}</span>
-                <div className={`translation-output ${translationState === 'error' ? 'error' : ''}`}>
-                  {translationState === 'error'
-                    ? t.translatorError
-                    : translatedText || t.outputPlaceholder}
-                </div>
-              </label>
-            </div>
-
-            <div className="translator-actions">
-              <button className="button button-gold" onClick={translateMessage} disabled={!sourceText.trim() || translationState === 'loading'}>
-                {translationState === 'loading' ? <><Clock3 className="spin" size={17} /> {t.translating}</> : <><Sparkles size={17} /> {t.translateButton}</>}
-              </button>
-              <a className="google-link" href={googleTranslateUrl} target="_blank" rel="noreferrer">
-                {t.openGoogle} <ExternalLink size={15} />
-              </a>
-            </div>
-            <p className="translator-note">{t.translatorNote}</p>
           </div>
         </section>
 
