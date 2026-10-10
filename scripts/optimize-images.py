@@ -10,6 +10,12 @@ names = [
     'porsche-911-silver', 'porsche-911-green', 'toyota-prius-yellow',
     'toyota-prius-white', 'toyota-prius-black', 'honda-accord-blue',
     'honda-accord-white', 'honda-accord-black',
+    'honda-city-silver', 'honda-city-white', 'honda-city-black',
+    'honda-civic-red', 'honda-civic-white', 'honda-civic-blue',
+    'toyota-crown-sand', 'toyota-crown-white', 'toyota-crown-black',
+    'lexus-ls-black', 'lexus-ls-silver', 'lexus-ls-white',
+    'toyota-alphard-white', 'toyota-alphard-black', 'toyota-alphard-grey',
+    'nissan-gtr-silver', 'nissan-gtr-red', 'nissan-gtr-black',
 ]
 for name in names:
     source = assets / f'{name}.png'

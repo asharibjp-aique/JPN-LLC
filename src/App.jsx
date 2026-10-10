@@ -39,6 +39,24 @@ import priusBlack from './assets/toyota-prius-black.webp'
 import accordBlue from './assets/honda-accord-blue.webp'
 import accordWhite from './assets/honda-accord-white.webp'
 import accordBlack from './assets/honda-accord-black.webp'
+import citySilver from './assets/honda-city-silver.webp'
+import cityWhite from './assets/honda-city-white.webp'
+import cityBlack from './assets/honda-city-black.webp'
+import civicRed from './assets/honda-civic-red.webp'
+import civicWhite from './assets/honda-civic-white.webp'
+import civicBlue from './assets/honda-civic-blue.webp'
+import crownSand from './assets/toyota-crown-sand.webp'
+import crownWhite from './assets/toyota-crown-white.webp'
+import crownBlack from './assets/toyota-crown-black.webp'
+import lsBlack from './assets/lexus-ls-black.webp'
+import lsSilver from './assets/lexus-ls-silver.webp'
+import lsWhite from './assets/lexus-ls-white.webp'
+import alphardWhite from './assets/toyota-alphard-white.webp'
+import alphardBlack from './assets/toyota-alphard-black.webp'
+import alphardGrey from './assets/toyota-alphard-grey.webp'
+import gtrSilver from './assets/nissan-gtr-silver.webp'
+import gtrRed from './assets/nissan-gtr-red.webp'
+import gtrBlack from './assets/nissan-gtr-black.webp'
 
 const content = {
   en: {
@@ -81,6 +99,12 @@ const content = {
       ['Porsche 911 Carrera', 'Modern sports icon', 'Timeless form, contemporary performance.'],
       ['Toyota Prius', 'Progressive hybrid', 'Forward-thinking design. Everyday brilliance.'],
       ['Honda Accord', 'Refined hybrid sedan', 'Effortless elegance, wherever life leads.'],
+      ['Honda City', 'Urban elegance', 'Thoughtful proportions. Refined everyday driving.'],
+      ['Honda Civic', 'Sporting sedan', 'Sharp design with an unmistakable spirit.'],
+      ['Toyota Crown', 'Modern Japanese luxury', 'A distinctive silhouette with a regal presence.'],
+      ['Lexus LS', 'Flagship luxury', 'Quiet sophistication, crafted around you.'],
+      ['Toyota Alphard', 'Executive MPV', 'First-class comfort for every journey.'],
+      ['Nissan GT-R', 'Japanese performance icon', 'Engineering passion. Unforgettable presence.'],
     ],
     aboutKicker: 'PERSONAL SERVICE',
     aboutTitle: 'A trusted point of contact in Japan.',
@@ -154,6 +178,12 @@ const content = {
       ['ポルシェ 911 カレラ', 'モダンスポーツ', '時代を超えるフォルムと現代のパフォーマンス。'],
       ['トヨタ プリウス', '先進のハイブリッド', '未来を感じるデザイン。毎日に、新しい輝きを。'],
       ['ホンダ アコード', '上質なハイブリッドセダン', 'どんな道にも、自然体のエレガンスを。'],
+      ['ホンダ シティ', '上質なコンパクトセダン', '洗練されたフォルムで、毎日の運転を上質に。'],
+      ['ホンダ シビック', 'スポーティーセダン', 'シャープなデザインに、走る歓びを。'],
+      ['トヨタ クラウン', '日本のモダンラグジュアリー', '気品ある存在感を、個性的なシルエットに。'],
+      ['レクサス LS', 'フラッグシップセダン', '静かな洗練と、心を満たすおもてなし。'],
+      ['トヨタ アルファード', 'エグゼクティブミニバン', 'すべての旅に、ファーストクラスのくつろぎを。'],
+      ['日産 GT-R', '日本のパフォーマンスアイコン', '技術への情熱。忘れられない存在感。'],
     ],
     aboutKicker: 'パーソナルサービス',
     aboutTitle: '日本で信頼できる窓口を。',
@@ -196,6 +226,12 @@ const vehicles = [
   { id: 'porsche', colors: [['red', '#6b1e2c', porscheImage], ['silver', '#bfc3c7', porscheSilver], ['green', '#154b3d', porscheGreen]] },
   { id: 'prius', colors: [['yellow', '#d2ad37', priusYellow], ['white', '#f2f0e9', priusWhite], ['black', '#171a20', priusBlack]] },
   { id: 'accord', colors: [['blue', '#254969', accordBlue], ['white', '#f2f0e9', accordWhite], ['black', '#171a20', accordBlack]] },
+  { id: 'city', colors: [['silver', '#bfc3c7', citySilver], ['white', '#f2f0e9', cityWhite], ['black', '#171a20', cityBlack]] },
+  { id: 'civic', colors: [['red', '#6b1e2c', civicRed], ['white', '#f2f0e9', civicWhite], ['blue', '#254969', civicBlue]] },
+  { id: 'crown', colors: [['sand', '#b29772', crownSand], ['white', '#f2f0e9', crownWhite], ['black', '#171a20', crownBlack]] },
+  { id: 'ls', colors: [['black', '#171a20', lsBlack], ['silver', '#bfc3c7', lsSilver], ['white', '#f2f0e9', lsWhite]] },
+  { id: 'alphard', colors: [['white', '#f2f0e9', alphardWhite], ['black', '#171a20', alphardBlack], ['grey', '#777c82', alphardGrey]] },
+  { id: 'gtr', colors: [['silver', '#bfc3c7', gtrSilver], ['red', '#6b1e2c', gtrRed], ['black', '#171a20', gtrBlack]] },
 ]
 
 function VehicleCard({ vehicle, copy, index, t }) {
@@ -207,7 +243,7 @@ function VehicleCard({ vehicle, copy, index, t }) {
     <article className="vehicle-card" data-reveal style={{ '--delay': `${(index % 3) * 80}ms` }}>
       <div className="vehicle-image">
         <img key={image} src={image} alt={`${name} — ${t.colors[color]}`} loading="lazy" decoding="async" width="1448" height="1086" />
-        <span className="vehicle-number">0{index + 1}</span>
+        <span className="vehicle-number">{String(index + 1).padStart(2, '0')}</span>
         <a className="vehicle-arrow" href="#contact" aria-label={`${t.vehicleEnquiry}: ${name}`}><ArrowUpRight size={18} /></a>
         <span className="vehicle-finish">{t.colors[color]}</span>
       </div>

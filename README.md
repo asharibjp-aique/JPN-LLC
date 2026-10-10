@@ -5,7 +5,7 @@ A premium, bilingual single-page portfolio for JPN LLC's Japanese vehicle sourci
 ## Highlights
 
 - One-click English ↔ Japanese full-site language toggle
-- Six-car responsive showcase with three photographic exterior-color previews per model
+- Twelve-car responsive showcase with three photographic exterior-color previews per model
 - Full original company logo in the hero and the owner's supplied Prado photograph
 - Owner profile and direct contact actions
 - WhatsApp and LINE QR codes

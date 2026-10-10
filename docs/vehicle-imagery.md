@@ -1,6 +1,119 @@
 # Vehicle imagery
 
-Mode: built-in ImageGen. New images are illustrative portfolio photography, not inventory records. Each final file is 1448 × 1086 and encoded as WebP at quality 94 without resizing. The original logo and supplied owner photograph are used intact.
+## Additional Japanese models (October 2026)
+
+Mode: built-in ImageGen, one generation per model/color. Final assets preserve the generated resolution (approximately 1448 × 1086, with minor single-pixel variations) and use quality-94 WebP. All photographs are illustrative, not verified inventory or OEM paint samples.
+
+### honda-city-silver
+
+Final asset: [honda-city-silver.webp](../src/assets/honda-city-silver.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Honda City, seventh-generation facelift four-door sedan, elegant compact proportions, recognizable wide chrome Honda grille and narrow LED headlights, with metallic silver exterior. Scene: a quiet palm-lined promenade beside Kobe harbor, pale stone paving and restrained modern architecture at soft sunrise. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### honda-city-white
+
+Final asset: [honda-city-white.webp](../src/assets/honda-city-white.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Honda City, seventh-generation facelift four-door sedan, elegant compact proportions, recognizable wide chrome Honda grille and narrow LED headlights, with pearl white exterior. Scene: a quiet palm-lined promenade beside Kobe harbor, pale stone paving and restrained modern architecture at soft sunrise. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### honda-city-black
+
+Final asset: [honda-city-black.webp](../src/assets/honda-city-black.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Honda City, seventh-generation facelift four-door sedan, elegant compact proportions, recognizable wide chrome Honda grille and narrow LED headlights, with glossy obsidian black exterior. Scene: a quiet palm-lined promenade beside Kobe harbor, pale stone paving and restrained modern architecture at soft sunrise. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### honda-civic-red
+
+Final asset: [honda-civic-red.webp](../src/assets/honda-civic-red.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Honda Civic, eleventh-generation four-door sedan, clean sporty factory design, slim headlights and distinctive Honda front grille, with deep garnet red exterior. Scene: a secluded Japanese mountain road overlook with misty forested ridges, crisp blue-hour light and a subtle warm horizon. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### honda-civic-white
+
+Final asset: [honda-civic-white.webp](../src/assets/honda-civic-white.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Honda Civic, eleventh-generation four-door sedan, clean sporty factory design, slim headlights and distinctive Honda front grille, with pearl white exterior. Scene: a secluded Japanese mountain road overlook with misty forested ridges, crisp blue-hour light and a subtle warm horizon. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### honda-civic-blue
+
+Final asset: [honda-civic-blue.webp](../src/assets/honda-civic-blue.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Honda Civic, eleventh-generation four-door sedan, clean sporty factory design, slim headlights and distinctive Honda front grille, with deep metallic blue exterior. Scene: a secluded Japanese mountain road overlook with misty forested ridges, crisp blue-hour light and a subtle warm horizon. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### toyota-crown-sand
+
+Final asset: [toyota-crown-sand.webp](../src/assets/toyota-crown-sand.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Toyota Crown Crossover, sixteenth-generation modern luxury sedan crossover, raised fastback silhouette, striking narrow full-width front light signature and distinctive Crown emblem, with champagne bronze metallic exterior. Scene: a sophisticated contemporary Tokyo museum courtyard of travertine and glass, soft late-afternoon golden sunlight. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### toyota-crown-white
+
+Final asset: [toyota-crown-white.webp](../src/assets/toyota-crown-white.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Toyota Crown Crossover, sixteenth-generation modern luxury sedan crossover, raised fastback silhouette, striking narrow full-width front light signature and distinctive Crown emblem, with pearl white exterior. Scene: a sophisticated contemporary Tokyo museum courtyard of travertine and glass, soft late-afternoon golden sunlight. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### toyota-crown-black
+
+Final asset: [toyota-crown-black.webp](../src/assets/toyota-crown-black.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Toyota Crown Crossover, sixteenth-generation modern luxury sedan crossover, raised fastback silhouette, striking narrow full-width front light signature and distinctive Crown emblem, with glossy obsidian black exterior. Scene: a sophisticated contemporary Tokyo museum courtyard of travertine and glass, soft late-afternoon golden sunlight. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### lexus-ls-black
+
+Final asset: [lexus-ls-black.webp](../src/assets/lexus-ls-black.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Lexus LS 500, fifth-generation facelift flagship luxury four-door sedan, low sculpted silhouette, large intricate spindle grille and sharp triple LED headlights, with glossy obsidian black exterior. Scene: a serene lakeside Japanese luxury retreat with dark timber architecture and distant mountains, rich blue hour with warm architectural lighting. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### lexus-ls-silver
+
+Final asset: [lexus-ls-silver.webp](../src/assets/lexus-ls-silver.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Lexus LS 500, fifth-generation facelift flagship luxury four-door sedan, low sculpted silhouette, large intricate spindle grille and sharp triple LED headlights, with metallic silver exterior. Scene: a serene lakeside Japanese luxury retreat with dark timber architecture and distant mountains, rich blue hour with warm architectural lighting. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### lexus-ls-white
+
+Final asset: [lexus-ls-white.webp](../src/assets/lexus-ls-white.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Lexus LS 500, fifth-generation facelift flagship luxury four-door sedan, low sculpted silhouette, large intricate spindle grille and sharp triple LED headlights, with pearl white exterior. Scene: a serene lakeside Japanese luxury retreat with dark timber architecture and distant mountains, rich blue hour with warm architectural lighting. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### toyota-alphard-white
+
+Final asset: [toyota-alphard-white.webp](../src/assets/toyota-alphard-white.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Toyota Alphard, fourth-generation 40-series luxury passenger minivan, tall boxy executive van silhouette, imposing chrome grille and distinctive split modern LED headlights, with pearl white exterior. Scene: the porte-cochere of an elegant Kyoto boutique hotel with stone walls, timber slats and a Japanese garden, soft diffused morning light. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### toyota-alphard-black
+
+Final asset: [toyota-alphard-black.webp](../src/assets/toyota-alphard-black.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Toyota Alphard, fourth-generation 40-series luxury passenger minivan, tall boxy executive van silhouette, imposing chrome grille and distinctive split modern LED headlights, with glossy obsidian black exterior. Scene: the porte-cochere of an elegant Kyoto boutique hotel with stone walls, timber slats and a Japanese garden, soft diffused morning light. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### toyota-alphard-grey
+
+Final asset: [toyota-alphard-grey.webp](../src/assets/toyota-alphard-grey.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Toyota Alphard, fourth-generation 40-series luxury passenger minivan, tall boxy executive van silhouette, imposing chrome grille and distinctive split modern LED headlights, with titanium metallic grey exterior. Scene: the porte-cochere of an elegant Kyoto boutique hotel with stone walls, timber slats and a Japanese garden, soft diffused morning light. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### nissan-gtr-silver
+
+Final asset: [nissan-gtr-silver.webp](../src/assets/nissan-gtr-silver.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Nissan GT-R R35, late-model factory sports coupe with recognizable squared GT-R nose, sculpted hood, angular LED headlights and original multi-spoke alloy wheels, with metallic silver exterior. Scene: an empty coastal road overlooking Hakone's Lake Ashi with Mount Fuji in the distance at cool sunrise, subtle warm reflections on lightly damp asphalt. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### nissan-gtr-red
+
+Final asset: [nissan-gtr-red.webp](../src/assets/nissan-gtr-red.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Nissan GT-R R35, late-model factory sports coupe with recognizable squared GT-R nose, sculpted hood, angular LED headlights and original multi-spoke alloy wheels, with deep garnet red exterior. Scene: an empty coastal road overlooking Hakone's Lake Ashi with Mount Fuji in the distance at cool sunrise, subtle warm reflections on lightly damp asphalt. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+### nissan-gtr-black
+
+Final asset: [nissan-gtr-black.webp](../src/assets/nissan-gtr-black.webp)
+
+Use case: ads-marketing. Asset type: standalone HD automotive portfolio photograph, a paint-color preview. Subject: exactly one Nissan GT-R R35, late-model factory sports coupe with recognizable squared GT-R nose, sculpted hood, angular LED headlights and original multi-spoke alloy wheels, with glossy obsidian black exterior. Scene: an empty coastal road overlooking Hakone's Lake Ashi with Mount Fuji in the distance at cool sunrise, subtle warm reflections on lightly damp asphalt. Premium photorealistic editorial car photography with realistic factory proportions and reflections, natural rich cinematic colors, tasteful restrained styling. Landscape 4:3, front three-quarter angle, whole vehicle centered with at least 10 percent breathing room on every side; all bumpers, wheels and roof fully in frame. Single car dominates the image, no people or additional cars. Make model recognizable and physically believable. Preserve factory badges, grille, trim, lights, tires and glass in appropriate original materials. No captions, marketing text, frames, watermarks or custom body kits. Match the aesthetic of a premium Japanese export portfolio. High definition, sharp 1448x1086 or higher detail.
+
+
+Mode: built-in ImageGen. Images are illustrative portfolio photography, not inventory records. Vehicle images are approximately 1448 × 1086 and encoded as WebP at quality 94 without resizing. The original logo and supplied owner photograph are used intact.
 
 ## Saved files and final prompt set
 
