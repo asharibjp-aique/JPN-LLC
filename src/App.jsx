@@ -17,14 +17,28 @@ import {
   X,
 } from 'lucide-react'
 import logo from './assets/jpn-logo.png'
-import fleet from './assets/luxury-fleet.png'
-import owner from './assets/naeem-muhammad.png'
+import fleet from './assets/luxury-fleet.webp'
+import owner from './assets/naeem-muhammad-prado.png'
 import whatsappQr from './assets/whatsapp-qr.png'
 import lineQr from './assets/line-qr.png'
-import bmwImage from './assets/bmw-7-series.png'
-import lexusImage from './assets/lexus-lx.png'
-import pradoImage from './assets/land-cruiser-prado.png'
-import porscheImage from './assets/porsche-911.png'
+import bmwImage from './assets/bmw-7-series.webp'
+import lexusImage from './assets/lexus-lx.webp'
+import pradoImage from './assets/land-cruiser-prado.webp'
+import porscheImage from './assets/porsche-911.webp'
+import bmwSilver from './assets/bmw-7-series-silver.webp'
+import bmwWhite from './assets/bmw-7-series-white.webp'
+import lexusBlack from './assets/lexus-lx-black.webp'
+import lexusGrey from './assets/lexus-lx-grey.webp'
+import pradoWhite from './assets/land-cruiser-prado-white.webp'
+import pradoBlack from './assets/land-cruiser-prado-black.webp'
+import porscheSilver from './assets/porsche-911-silver.webp'
+import porscheGreen from './assets/porsche-911-green.webp'
+import priusYellow from './assets/toyota-prius-yellow.webp'
+import priusWhite from './assets/toyota-prius-white.webp'
+import priusBlack from './assets/toyota-prius-black.webp'
+import accordBlue from './assets/honda-accord-blue.webp'
+import accordWhite from './assets/honda-accord-white.webp'
+import accordBlack from './assets/honda-accord-black.webp'
 
 const content = {
   en: {
@@ -48,12 +62,25 @@ const content = {
     collectionTitle: 'Modern icons. Chosen with care.',
     collectionBody:
       'From executive sedans to capable SUVs, we help source the right vehicle for your market and lifestyle.',
+    collectionNote: 'A color for every character.',
+    colorHint: 'Select a finish to explore',
+    colorLabel: 'Exterior',
+    collectionDisclaimer: 'Illustrative color previews. Actual finishes and availability are confirmed when sourcing your vehicle.',
+    vehicleEnquiry: 'Enquire',
+    brandCaption: 'Quality cars, trusted worldwide',
+    colors: {
+      black: 'Obsidian black', silver: 'Metallic silver', white: 'Pearl white',
+      grey: 'Titanium grey', sand: 'Sand bronze', red: 'Garnet red',
+      green: 'Racing green', yellow: 'Mustard yellow', blue: 'Deep blue',
+    },
     viewAll: 'Enquire about a vehicle',
     cars: [
       ['BMW 7 Series', 'Executive luxury', 'Precision, comfort, presence.'],
       ['Lexus LX', 'Premium SUV', 'Japanese refinement without compromise.'],
       ['Land Cruiser Prado', 'Luxury 4×4', 'Legendary capability, everyday comfort.'],
       ['Porsche 911 Carrera', 'Modern sports icon', 'Timeless form, contemporary performance.'],
+      ['Toyota Prius', 'Progressive hybrid', 'Forward-thinking design. Everyday brilliance.'],
+      ['Honda Accord', 'Refined hybrid sedan', 'Effortless elegance, wherever life leads.'],
     ],
     aboutKicker: 'PERSONAL SERVICE',
     aboutTitle: 'A trusted point of contact in Japan.',
@@ -81,6 +108,7 @@ const content = {
     whatsapp: 'WhatsApp',
     line: 'LINE',
     scan: 'Scan to connect',
+    lineConnect: 'Connect on LINE',
     callNow: 'Call now',
     emailNow: 'Send email',
     footer: 'Japanese car sourcing & export',
@@ -107,12 +135,25 @@ const content = {
     collectionTitle: 'こだわりの一台を、丁寧に。',
     collectionBody:
       '高級セダンから本格SUVまで、お客様の市場とライフスタイルに合う車両をお探しします。',
+    collectionNote: 'あなたらしさを映す、カラー。',
+    colorHint: 'カラーを選んでご覧ください',
+    colorLabel: 'ボディカラー',
+    collectionDisclaimer: '画像はカラーのイメージです。実際の色と取扱状況は車両をお探しする際に確認いたします。',
+    vehicleEnquiry: 'お問い合わせ',
+    brandCaption: '高品質な車を、世界へ',
+    colors: {
+      black: 'オブシディアンブラック', silver: 'メタリックシルバー', white: 'パールホワイト',
+      grey: 'チタニウムグレー', sand: 'サンドブロンズ', red: 'ガーネットレッド',
+      green: 'レーシンググリーン', yellow: 'マスタードイエロー', blue: 'ディープブルー',
+    },
     viewAll: '車両について問い合わせる',
     cars: [
       ['BMW 7シリーズ', '高級セダン', '精密さ、快適さ、圧倒的な存在感。'],
       ['レクサス LX', 'プレミアムSUV', '妥協のない日本の洗練。'],
       ['ランドクルーザー プラド', 'ラグジュアリー4WD', '信頼の走破性と日常の快適性。'],
       ['ポルシェ 911 カレラ', 'モダンスポーツ', '時代を超えるフォルムと現代のパフォーマンス。'],
+      ['トヨタ プリウス', '先進のハイブリッド', '未来を感じるデザイン。毎日に、新しい輝きを。'],
+      ['ホンダ アコード', '上質なハイブリッドセダン', 'どんな道にも、自然体のエレガンスを。'],
     ],
     aboutKicker: 'パーソナルサービス',
     aboutTitle: '日本で信頼できる窓口を。',
@@ -140,6 +181,7 @@ const content = {
     whatsapp: 'WhatsApp',
     line: 'LINE',
     scan: 'スキャンして追加',
+    lineConnect: 'LINEでつながる',
     callNow: '電話する',
     emailNow: 'メールを送る',
     footer: '日本車の仕入れ・輸出',
@@ -148,11 +190,43 @@ const content = {
 }
 
 const vehicles = [
-  { image: bmwImage, className: 'bmw' },
-  { image: lexusImage, className: 'lexus' },
-  { image: pradoImage, className: 'prado' },
-  { image: porscheImage, className: 'sport' },
+  { id: 'bmw', colors: [['black', '#171a20', bmwImage], ['silver', '#bfc3c7', bmwSilver], ['white', '#f2f0e9', bmwWhite]] },
+  { id: 'lexus', colors: [['white', '#f2f0e9', lexusImage], ['black', '#171a20', lexusBlack], ['grey', '#777c82', lexusGrey]] },
+  { id: 'prado', colors: [['sand', '#b29772', pradoImage], ['white', '#f2f0e9', pradoWhite], ['black', '#171a20', pradoBlack]] },
+  { id: 'porsche', colors: [['red', '#6b1e2c', porscheImage], ['silver', '#bfc3c7', porscheSilver], ['green', '#154b3d', porscheGreen]] },
+  { id: 'prius', colors: [['yellow', '#d2ad37', priusYellow], ['white', '#f2f0e9', priusWhite], ['black', '#171a20', priusBlack]] },
+  { id: 'accord', colors: [['blue', '#254969', accordBlue], ['white', '#f2f0e9', accordWhite], ['black', '#171a20', accordBlack]] },
 ]
+
+function VehicleCard({ vehicle, copy, index, t }) {
+  const [selected, setSelected] = useState(0)
+  const [name, type, description] = copy
+  const [color, , image] = vehicle.colors[selected]
+
+  return (
+    <article className="vehicle-card" data-reveal style={{ '--delay': `${(index % 3) * 80}ms` }}>
+      <div className="vehicle-image">
+        <img key={image} src={image} alt={`${name} — ${t.colors[color]}`} loading="lazy" decoding="async" width="1448" height="1086" />
+        <span className="vehicle-number">0{index + 1}</span>
+        <a className="vehicle-arrow" href="#contact" aria-label={`${t.vehicleEnquiry}: ${name}`}><ArrowUpRight size={18} /></a>
+        <span className="vehicle-finish">{t.colors[color]}</span>
+      </div>
+      <div className="vehicle-info">
+        <span className="vehicle-type">{type}</span>
+        <h3>{name}</h3>
+        <p>{description}</p>
+        <div className="vehicle-colors">
+          <div className="color-copy" aria-live="polite"><small>{t.colorLabel}</small><strong>{t.colors[color]}</strong></div>
+          <div className="color-options" role="group" aria-label={`${name} — ${t.colorLabel}`}>
+            {vehicle.colors.map(([key, hex], colorIndex) => (
+              <button key={key} type="button" className={`color-swatch${selected === colorIndex ? ' is-selected' : ''}`} style={{ '--swatch': hex }} aria-label={`${name}: ${t.colors[key]}`} aria-pressed={selected === colorIndex} title={t.colors[key]} onClick={() => setSelected(colorIndex)}><span /></button>
+            ))}
+          </div>
+        </div>
+      </div>
+    </article>
+  )
+}
 
 function App() {
   const [lang, setLang] = useState('en')
@@ -206,7 +280,7 @@ function App() {
             <Phone size={16} />
             <span>070 9155 5173</span>
           </a>
-          <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+          <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label={lang === 'en' ? 'Toggle menu' : 'メニューを開閉'} aria-expanded={menuOpen}>
             {menuOpen ? <X /> : <Menu />}
           </button>
         </div>
@@ -217,6 +291,7 @@ function App() {
           <img className="hero-image" src={fleet} alt="Premium Japanese vehicles at a port" />
           <div className="hero-overlay" />
           <div className="hero-grain" />
+          <div className="hero-layout">
           <div className="hero-content">
             <div className="availability-pill">
               <span className="pulse-dot" />
@@ -236,6 +311,11 @@ function App() {
                 {t.contact} <ArrowUpRight size={17} />
               </a>
             </div>
+          </div>
+          <figure className="hero-brand-art">
+            <div className="hero-logo-frame"><img src={logo} alt="JPN LLC — Car Exporting. Quality cars, trusted worldwide." width="1254" height="1254" /></div>
+            <figcaption><span />{t.brandCaption}<span /></figcaption>
+          </figure>
           </div>
           <div className="hero-scroll">
             <span>{t.scroll}</span>
@@ -261,25 +341,11 @@ function App() {
             <p>{t.collectionBody}</p>
           </div>
 
+          <div className="collection-toolbar" data-reveal><p>{t.collectionNote}</p><span>{t.colorHint}<span className="finish-dots" aria-hidden="true"><i /><i /><i /></span></span></div>
           <div className="vehicle-grid">
-            {t.cars.map(([name, type, description], index) => (
-              <article className="vehicle-card" key={name} data-reveal style={{ '--delay': `${index * 80}ms` }}>
-                <div className={`vehicle-image ${vehicles[index].className}`}>
-                  <img
-                    src={vehicles[index].image}
-                    alt={`${name} — ${type}`}
-                  />
-                  <span className="vehicle-number">0{index + 1}</span>
-                  <span className="vehicle-arrow"><ArrowUpRight size={18} /></span>
-                </div>
-                <div className="vehicle-info">
-                  <span>{type}</span>
-                  <h3>{name}</h3>
-                  <p>{description}</p>
-                </div>
-              </article>
-            ))}
+            {vehicles.map((vehicle, index) => <VehicleCard key={vehicle.id} vehicle={vehicle} copy={t.cars[index]} index={index} t={t} />)}
           </div>
+          <p className="collection-disclaimer">{t.collectionDisclaimer}</p>
           <a className="text-link" href="#contact">
             {t.viewAll} <ArrowRight size={17} />
           </a>
@@ -288,7 +354,7 @@ function App() {
         <section className="section about" id="about">
           <div className="owner-visual" data-reveal>
             <div className="owner-frame">
-              <img src={owner} alt="Naeem Muhammad, Representative Director of JPN LLC" />
+              <img src={owner} alt="Naeem Muhammad beside a white Toyota Prado in Japan" loading="lazy" width="960" height="1280" />
             </div>
             <div className="owner-tag">
               <span>{t.ownerRole}</span>
@@ -376,7 +442,7 @@ function App() {
                 <div><strong>{t.line}</strong><small>{t.scan}</small></div>
               </div>
               <img src={lineQr} alt="JPN LLC LINE QR code" />
-              <p>Connect on LINE</p>
+              <p>{t.lineConnect}</p>
             </article>
           </div>
         </section>
